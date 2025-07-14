@@ -3,7 +3,7 @@ import time
 
 words = ["사과", "오렌지", "바나나", "포도", "수박", "참외", "귤", "코코넛", "딸기"]
 
-health = 3
+life = 3
 score = 0
 
 
@@ -20,8 +20,8 @@ while True:
         score = score + 1
         print("현재 점수: ", score)
     elif word != x or times > 2:
-        health = health - 1
-        print("현재 남은 목슴:", health)
-        if health == 0:
+        life = life - 1
+        print("현재 남은 목슴:", life)
+        if life == 0:
             print("목슴이 끝났습니다.")
             break
